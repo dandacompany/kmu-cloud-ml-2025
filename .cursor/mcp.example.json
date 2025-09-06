@@ -1,0 +1,47 @@
+{
+  "mcpServers": {
+      "awslabs.aws-pricing-mcp-server": {
+      "command": "uvx",
+      "args": [
+         "awslabs.aws-pricing-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "awstutor",
+        "AWS_REGION": "ap-northeast-2"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "awslabs.cost-explorer-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.cost-explorer-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "awstutor"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "awslabs.aws-api-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest"
+      ],
+      "env": {
+        "AWS_REGION": "ap-northeast-2",
+        "AWS_PROFILE": "awstutor"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "awslabs.s3-tables-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.s3-tables-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "awstutor",
+        "AWS_REGION": "ap-northeast-2"
+      }
+    }
+  }
+}

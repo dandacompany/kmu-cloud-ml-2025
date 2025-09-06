@@ -1,0 +1,9 @@
+.conda/
+.claude/
+.vscode/
+.history/
+.DS_Store
+__pycache__/
+.env
+
+.cursor/mcp.json
