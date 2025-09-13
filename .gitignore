@@ -7,3 +7,4 @@ __pycache__/
 .env
 
 .cursor/mcp.json
+ch01_basic/ch01_cloud_basic.html
