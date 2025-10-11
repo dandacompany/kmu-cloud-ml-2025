@@ -5,6 +5,8 @@
 .DS_Store
 __pycache__/
 .env
-
+.cursor/
 .cursor/mcp.json
 ch01_basic/ch01_cloud_basic.html
+assignments/
+ch05_sagemaker_basic_course1/source
