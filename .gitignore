@@ -10,3 +10,14 @@ __pycache__/
 ch01_basic/ch01_cloud_basic.html
 assignments/
 ch05_sagemaker_basic_course1/source
+ch07_advanced_course1/
+ch06_sagemaker_basic_course2/pipelining.ipynb
+ch06_sagemaker_basic_course2/script-mode.ipynb
+ch06_sagemaker_basic_course2/xgboost_model.json
+ch06_sagemaker_basic_course2/script/evaluate.py
+ch06_sagemaker_basic_course2/script/inference.py
+ch06_sagemaker_basic_course2/script/pca_preprocessing.py
+ch06_sagemaker_basic_course2/script/preprocess.py
+ch06_sagemaker_basic_course2/script/train.py
+ch07_advanced_course1/fm-recommender.ipynb
+ch07_advanced_course1/ncf-recommender.ipynb
