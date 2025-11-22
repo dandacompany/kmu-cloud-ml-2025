@@ -109,5 +109,5 @@ with open(f'{asset_path}/adult_scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 with open(f'{asset_path}/adult_pca.pkl', 'wb') as f:
     pickle.dump(pca, f)
-    
+
 print("PCA 전처리 완료")

@@ -28,7 +28,7 @@ def main():
     args, _ = parser.parse_known_args()
 
     # 데이터 로드
-    
+
     # CSV 파일 목록 가져오기
     train_files = glob(args.train + "/*.csv")
     train_data = pd.concat([pd.read_csv(file) for file in train_files], ignore_index=True)
@@ -40,13 +40,13 @@ def main():
     y_train = train_data.iloc[:, 0]
     X_val = val_data.iloc[:, 1:]
     y_val = val_data.iloc[:, 0]
-    
+
     d_train = xgb.DMatrix(X_train, label=y_train)
     d_val = xgb.DMatrix(X_val, label=y_val)
 
     # XGBoost 모델 생성 및 훈련
     watchlist = [(d_train, '훈련'), (d_val, '검증')]
-    
+
     params = {
         'max_depth': args.max_depth,
         'learning_rate': args.learning_rate,
@@ -58,7 +58,7 @@ def main():
         'eval_metric': args.eval_metric,
     }
     xgb_model = xgb.train(params, d_train, args.num_round, watchlist, early_stopping_rounds=args.early_stopping_rounds, verbose_eval=10)
-       
+
     # 검증 데이터로 성능 평가
     y_pred = xgb_model.predict(d_val)
     y_pred_binary = (y_pred > 0.5).astype(int)
