@@ -23,3 +23,4 @@ ch07_advanced_course1/fm-recommender.ipynb
 ch07_advanced_course1/ncf-recommender.ipynb
 ch08_advanced_course2/lambda-apigateway-api-integration.ipynb
 ch08_advanced_course2/dataset/
+ch10_datalake/*.json
